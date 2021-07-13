@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlers.AcceuilControler">
+   <children>
+      <SplitPane dividerPositions="0.7671370967741936" maxHeight="-Infinity" maxWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.29797979797979796" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" style="-fx-background-color: white;">
+                           <children>
+                              <VBox fx:id="pan_icones" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                 <padding>
+                                    <Insets left="15.0" />
+                                 </padding></VBox>
+                           </children></AnchorPane>
+                      <AnchorPane fx:id="pan_principal" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragOver="#onDragOver" prefWidth="700.0" style="-fx-background-color: white;" />
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="pan_bas" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="btn_djikstra" layoutX="116.0" layoutY="32.0" mnemonicParsing="false" onAction="#onDjikstra" prefHeight="35.0" prefWidth="141.0" text="Djikstra" />
+                  <Button fx:id="btn_kruskal" layoutX="314.0" layoutY="32.0" mnemonicParsing="false" onAction="#onKruskal" prefHeight="35.0" prefWidth="141.0" text="Kruskal" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

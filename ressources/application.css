@@ -1,0 +1,57 @@
+.icon {
+	-fx-background-radius: 90px; 
+}
+
+.icon-capteur {
+	-fx-background-color: transparent;
+	-fx-background-image: url("motion-sensor-2.png");
+}
+
+.icon-capteur:hover{
+	
+}
+
+.noeud-capteur{
+	-fx-background-radius: 10px; 
+	-fx-background-color: purple;
+}
+
+.entete {
+	-fx-background-radius: 10 10 0 0;
+	-fx-background-color:
+	linear-gradient(to bottom, rgba(255,255,255,0.7) 15%, rgba(50,100,150,0.45) 100%);
+	
+}
+
+.pan_droite:hover {
+	-fx-background-radius: 0 0 10 0;
+	-fx-background-color:
+	rgba(255, 255, 255, 0.35);
+}
+
+.pan_gauche:hover {
+	-fx-background-radius: 0 0 0 10;
+	-fx-background-color:
+	rgba(255, 255, 255, 0.35);
+}
+
+.line-green {
+	-fx-stroke: green;
+	-fx-stroke-width: 5px;
+}
+
+.line-red {
+	-fx-stroke: red;
+	-fx-stroke-width: 5px;
+}
+
+.label-poids{
+	-fx-font-smoothing-type: lcd;
+ 	-fx-fill: red;
+ 	-fx-font-size: 14pt;
+}
+
+.fld-poids{
+	-fx-background-color: #a9a9a9 , red , red; 
+	-fx-background-radius: 0px;
+}
